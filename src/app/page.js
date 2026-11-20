@@ -13,7 +13,6 @@ const projects = [
     tech: ["React", "React Native", "Expo", "GPS"],
     link: "https://github.com/atharvparit05",
   },
- 
   {
     number: "02",
     title: "E-commerce Platform",
@@ -46,6 +45,7 @@ export default function Home() {
     ["About", "#about"],
     ["Skills", "#skills"],
     ["Projects", "#projects"],
+    ["Education", "#education"],
     ["Contact", "#contact"],
   ];
 
@@ -72,6 +72,7 @@ export default function Home() {
               {name}
             </a>
           ))}
+
           <a
             className="nav-contact"
             href="#contact"
@@ -82,7 +83,7 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* HERO */}
+      {/* HERO SECTION */}
       <section className="hero section" id="home">
         <div className="hero-content">
           <div className="availability">
@@ -112,6 +113,7 @@ export default function Home() {
             <a href="#projects" className="primary-btn">
               Explore My Work ↗
             </a>
+
             <a href="#contact" className="secondary-btn">
               Get In Touch
             </a>
@@ -125,6 +127,7 @@ export default function Home() {
             >
               GITHUB ↗
             </a>
+
             <span>•</span>
             <a href="#about">ABOUT ME ↗</a>
           </div>
@@ -136,16 +139,21 @@ export default function Home() {
 
           <div className="profile-card">
             <span className="card-small">CREATIVE MINDSET</span>
+
             <div className="profile-initials">AP</div>
+
             <div className="profile-line"></div>
+
             <h3>Think. Create. Build.</h3>
             <p>Turning imagination into digital reality.</p>
+
             <span className="profile-number">01 / 05</span>
           </div>
 
           <div className="floating-tag tag-top">
             <span>✦</span> CREATIVE
           </div>
+
           <div className="floating-tag tag-bottom">
             <span>⌘</span> DEVELOPER
           </div>
@@ -158,7 +166,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ABOUT */}
+      {/* ABOUT SECTION */}
       <section className="section about-section" id="about">
         <div className="section-label">
           <span>01 / ABOUT ME</span>
@@ -168,6 +176,7 @@ export default function Home() {
         <div className="about-grid">
           <div>
             <p className="eyebrow">A LITTLE INTRODUCTION</p>
+
             <h2 className="section-heading">
               Building ideas
               <br />
@@ -181,12 +190,14 @@ export default function Home() {
               exploring technology, designing websites and
               building useful digital solutions.
             </p>
+
             <p>
               I believe every great project starts with curiosity.
               My focus is on continuously improving my skills,
               experimenting with new technologies and creating
               meaningful experiences.
             </p>
+
             <a href="#contact" className="text-link">
               LET'S CONNECT ↗
             </a>
@@ -195,13 +206,15 @@ export default function Home() {
 
         <div className="stats-grid">
           <div className="stat">
-            <h3>03<span>+</span></h3>
+            <h3>02<span>+</span></h3>
             <p>PROJECT CONCEPTS</p>
           </div>
+
           <div className="stat">
             <h3>08<span>+</span></h3>
             <p>TECHNOLOGIES</p>
           </div>
+
           <div className="stat">
             <h3>∞</h3>
             <p>IDEAS TO EXPLORE</p>
@@ -209,7 +222,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SKILLS */}
+      {/* SKILLS SECTION */}
       <section className="section skills-section" id="skills">
         <div className="section-label">
           <span>02 / MY SKILLS</span>
@@ -232,7 +245,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* PROJECTS */}
+      {/* PROJECTS SECTION */}
       <section className="section projects-section" id="projects">
         <div className="section-label">
           <span>03 / SELECTED WORK</span>
@@ -243,6 +256,7 @@ export default function Home() {
           <h2 className="section-heading">
             Featured <span>projects.</span>
           </h2>
+
           <p>
             A selection of ideas and applications that reflect
             my learning journey.
@@ -252,12 +266,15 @@ export default function Home() {
         <div className="projects-list">
           {projects.map((project) => (
             <article className="project-card" key={project.number}>
-              <span className="project-number">{project.number}</span>
+              <span className="project-number">
+                {project.number}
+              </span>
 
               <div className="project-info">
                 <span className="project-category">
                   {project.category}
                 </span>
+
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
 
@@ -282,8 +299,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* EDUCATION */}
-      <section className="section education-section" id="education">
+      {/* EDUCATION SECTION */}
+      <section
+        className="section education-section"
+        id="education"
+      >
         <div className="section-label">
           <span>04 / EDUCATION</span>
           <span>MY LEARNING JOURNEY</span>
@@ -292,6 +312,7 @@ export default function Home() {
         <div className="education-content">
           <div>
             <p className="eyebrow">ACADEMIC BACKGROUND</p>
+
             <h2 className="section-heading">
               Learning never
               <br />
@@ -301,17 +322,24 @@ export default function Home() {
 
           <div className="education-card">
             <span className="education-icon">✦</span>
+
             <p>UNDERGRADUATE STUDIES</p>
+
             <h3>Bachelor of Computer Applications</h3>
+
             <span>Computer Applications</span>
+
             <div className="education-divider"></div>
-            <p>Focused on programming, computer science
-              and practical software development.</p>
+
+            <p>
+              Focused on programming, computer science
+              and practical software development.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* CONTACT */}
+      {/* CONTACT SECTION */}
       <section className="section contact-section" id="contact">
         <div className="section-label">
           <span>05 / CONTACT</span>
@@ -329,7 +357,57 @@ export default function Home() {
         <p className="contact-description">
           I'm always interested in exploring new ideas,
           learning and collaborating on creative projects.
+          Feel free to reach out!
         </p>
+
+        <div className="contact-details">
+          {/* PHONE */}
+          <a
+            href="tel:+919067346261"
+            className="contact-item"
+          >
+            <span className="contact-icon">☎</span>
+
+            <div>
+              <small>PHONE NUMBER</small>
+              <h3>+91 9067346261</h3>
+            </div>
+
+            <b>↗</b>
+          </a>
+
+          {/* EMAIL */}
+          <a
+            href="mailto:atharvparit2005@gmail.com"
+            className="contact-item"
+          >
+            <span className="contact-icon">✉</span>
+
+            <div>
+              <small>EMAIL ADDRESS</small>
+              <h3>atharvparit2005@gmail.com</h3>
+            </div>
+
+            <b>↗</b>
+          </a>
+
+          {/* WHATSAPP */}
+          <a
+            href="https://wa.me/919067346261"
+            target="_blank"
+            rel="noreferrer"
+            className="contact-item"
+          >
+            <span className="contact-icon">◉</span>
+
+            <div>
+              <small>WHATSAPP</small>
+              <h3>Let's Chat</h3>
+            </div>
+
+            <b>↗</b>
+          </a>
+        </div>
 
         <a
           href="https://github.com/atharvparit05"
@@ -337,20 +415,30 @@ export default function Home() {
           rel="noreferrer"
           className="primary-btn"
         >
-          Connect on GitHub ↗
+          Visit My GitHub ↗
         </a>
 
         <div className="contact-socials">
-          <a href="https://github.com/atharvparit05"
-             target="_blank" rel="noreferrer">GITHUB ↗</a>
+          <a
+            href="https://github.com/atharvparit05"
+            target="_blank"
+            rel="noreferrer"
+          >
+            GITHUB ↗
+          </a>
+
           <a href="#home">BACK TO TOP ↑</a>
         </div>
       </section>
 
       {/* FOOTER */}
       <footer className="footer">
-        <a href="#home" className="logo">AP<span>.</span></a>
+        <a href="#home" className="logo">
+          AP<span>.</span>
+        </a>
+
         <p>DESIGNED & BUILT BY ATHARV PARIT</p>
+
         <p>© 2026 ALL RIGHTS RESERVED</p>
       </footer>
     </main>
